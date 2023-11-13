@@ -14,7 +14,7 @@ function App() {
     async function getData() {
       try {
         setIsLoading(true);
-        const res = await fetch("../data/data.json");
+        const res = await fetch("/data.json");
         const data = await res.json();
         // console.log(data);
         setData(data);
